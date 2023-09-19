@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Home from './pages/home/home';
+import Board from './pages/post/postlist';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <title>whistle!</title>
     <Home />
+    <Board />
   </React.StrictMode>
 );
 
