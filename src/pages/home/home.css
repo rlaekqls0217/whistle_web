@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+}
+
+.box1 {
+  border: 2px solid rgba(0, 0, 0, 0.1);;
+  margin: 150px;
+  overflow: auto;
+  height: 840px;
+  border-radius: 25px;
+  font-family: 'M2';
+  font-size: 120%;
+  padding: 30px;
+  padding-left: 30px;
+}
+
+.boxTitle1 {
+  position: absolute;
+  top: -250px;
+  margin-left: 185px;
+  margin-top: 350px;
+  font-family: 'B1';
+  font-size: 200%;
+}
+
+.button {
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: 'M2';
+  background-color: transparent;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+}

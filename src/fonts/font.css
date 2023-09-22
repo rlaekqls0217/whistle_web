@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'B1';
+    src: url('./Pretendard-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'B2';
+        src: url('./Pretendard-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'B3';
+    src: url('./Pretendard-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'B4';
+    src: url('./Pretendard-Black.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'M1';
+    src: url('./Pretendard-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'M2';
+    src: url('./Pretendard-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'L1';
+    src: url('./Pretendard-Thin.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'L2';
+    src: url('./Pretendard-ExtraLight.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'L3';
+    src: url('./Pretendard-Light.woff2') format('woff2');
+}
