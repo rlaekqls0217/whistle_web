@@ -1,5 +1,41 @@
 import React, { Component } from 'react';
 
+class Navbar extends Component {
+  render() {
+    const { loggedIn, navigateTo, signingUp } = this.props;
+
+    return (
+      <ul className="navbar" style={{ display: 'flex', justifyContent: 'space-between', fontFamily: 'Gothic', fontSize: '20px' }}>
+        <li style={{ listStyleType: 'none', marginRight: '50px' }}>
+          <div className="nav-item-box">
+            <a href="#home" onClick={() => navigateTo('home')} style={{ color: 'black' }}>
+              홈
+            </a>
+          </div>
+        </li>
+        <li style={{ listStyleType: 'none', marginRight: '50px' }}>
+          <div className="nav-item-box">
+            <a href="#findfriend" onClick={() => navigateTo('findfriend')} style={{ color: 'black' }}>
+              여행메이트찾기
+            </a>
+          </div>
+        </li>
+        <li style={{ listStyleType: 'none', marginRight: '50px' }}>
+          <div className="nav-item-box">
+            <a
+              href="#my"
+              onClick={() => navigateTo(loggedIn ? 'home' : 'login')}
+              style={{ color: 'black' }}
+            >
+              MY
+            </a>
+          </div>
+        </li>
+      </ul>
+    );
+  }
+}
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -7,7 +43,7 @@ class App extends Component {
       loggedIn: false,
       signingUp: false,
       searchQuery: '',
-      activeSection: 'home', 
+      activeSection: 'home',
       username: '',
       password: '',
       signupUsername: '',
@@ -108,6 +144,7 @@ class App extends Component {
           </li>
         </ul>
 
+        <Navbar loggedIn={loggedIn} navigateTo={this.navigateTo} signingUp={signingUp} />
         <hr style={{ backgroundColor: 'black', height: '1px', border: 'none' }} />
 
         {activeSection === 'home' && (
@@ -262,7 +299,6 @@ class App extends Component {
           </form>
         </div>
 
-        {/* 회원가입 완료 메시지 */}
         {signingUp && !loggedIn && (
           <div className="message">
             <p>회원가입이 완료되었습니다.</p>
